@@ -2,7 +2,7 @@ import { Info } from "./api.models";
 
 export interface CharacterInfo{
     info: Info;
-    result: Character[]
+    results: Character[]
 }
 
 export interface Character{
