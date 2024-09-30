@@ -1,18 +1,18 @@
-import { Component, inject, OnInit } from '@angular/core';
-import {MatToolbarModule} from '@angular/material/toolbar';
+import { Component, input, OnInit } from '@angular/core';
+import { MatSlideToggleModule } from '@angular/material/slide-toggle';
+import {MatInputModule} from '@angular/material/input';
+import {FormsModule} from '@angular/forms';
 
 
 @Component({
   selector: 'app-header',
   standalone: true,
-  imports: [MatToolbarModule],
+  imports: [MatSlideToggleModule, FormsModule, MatInputModule],
   templateUrl: './header.component.html',
   styleUrl: './header.component.css'
 })
 export class HeaderComponent implements OnInit{
   
-  
-
   ngOnInit(): void {}
 
 

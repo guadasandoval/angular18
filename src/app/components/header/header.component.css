@@ -1,1 +1,13 @@
+.header-container{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    height: 80px;
+    width: 100%;
+    align-content: center;
+    background-color: var(--black);
+}
 
+.header-container img{
+    width: 150px;
+    margin-left: 15px;
+}

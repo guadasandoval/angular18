@@ -1,16 +1,23 @@
 @let characterI = character();
-@let characterInfoDetails = characterInfo();
 
 <div>
     @if(characterI){
-        <h3>{{characterI.name}}</h3>
-        <img 
-        [ngSrc]="characterI.image" 
-        [alt]="characterI.name"
-        width="200"
-        height="200"
-        />
-        <h2>Character: {{characterI.name}}</h2>
-        <p>{{characterInfoDetails | json}}</p>
+        <mat-card class="example-card" appearance="outlined">
+          <mat-card-header>
+            <div mat-card-avatar class="example-header-image" [ngStyle]="{'background-image': 'url(' + characterI.image + ')'}"></div>
+            <mat-card-title>{{characterI.name}}</mat-card-title>
+            <mat-card-subtitle>{{characterI.status}}</mat-card-subtitle>
+          </mat-card-header>
+          <img mat-card-image src={{characterI.image}} [alt]="characterI.name">
+          <mat-card-content>
+            <p>
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Rerum quis aliquam provident! Tempora, dolore quisquam. Veniam ut molestias fugiat adipisci, harum minus amet dolorem exercitationem facere incidunt molestiae, culpa ipsum.
+            </p>
+          </mat-card-content>
+          <mat-card-actions>
+            <button mat-button>LIKE</button>
+            <button mat-button>SHARE</button>
+          </mat-card-actions>
+        </mat-card>
     }
 </div>

@@ -1,4 +1,9 @@
-<div>
+<ng-container class="main-container">
+    <div  class="element">
+        <!-- <img class="image-container" ngSrc="./../../../assets/main-image.jpg" width="100" height="502" alt=""> -->
+    </div>
+    
+    <div class="grid-container">
     @if(characters$ | async; as characters){
         @for(character of characters; track character.id){
             @defer(on viewport){
@@ -12,4 +17,5 @@
           
         }
     }
-</div>
+    </div>
+</ng-container>

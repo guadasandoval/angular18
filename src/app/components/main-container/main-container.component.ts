@@ -1,4 +1,4 @@
-import { AsyncPipe } from '@angular/common';
+import { AsyncPipe, NgOptimizedImage } from '@angular/common';
 import { Component, inject } from '@angular/core';
 import { firstValueFrom, Observable } from 'rxjs';
 import { Character } from '../../core/models/character';
@@ -8,7 +8,7 @@ import { CharacterCardComponent } from '../character-card/character-card.compone
 @Component({
   selector: 'app-main-container',
   standalone: true,
-  imports: [AsyncPipe, CharacterCardComponent],
+  imports: [AsyncPipe, NgOptimizedImage, CharacterCardComponent],
   templateUrl: './main-container.component.html',
   styleUrl: './main-container.component.css'
 })

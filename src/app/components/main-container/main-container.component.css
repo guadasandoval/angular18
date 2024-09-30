@@ -1,4 +1,30 @@
+.main-container{
+    width: 100vw;
+    display: grid;
+    grid-template-columns: auto;
+    background: aqua;
+}
+
+.grid-container{
+    display: grid;
+    justify-content: center;
+    grid-template-columns: auto auto auto;
+    gap: 50px;
+}
 .placeholder{
     width: 220px;
     height: 220px;
 }
+
+.image-container{
+    width: 100%;
+}
+.element {
+    width: 100vw;
+    height: 700px;
+    background-image:
+      linear-gradient(transparent, #000),
+      url("./../../../assets/main-image.jpg");
+    background-size: cover;
+    background-position: 0 40%;
+  }
